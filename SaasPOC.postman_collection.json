@@ -36,12 +36,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://saasmaapitest.azurewebsites.net/api/city/GetAllCountry",
+							"raw": "http://{{url}}/api/city/GetAllCountry",
 							"protocol": "http",
 							"host": [
-								"saasmaapitest",
-								"azurewebsites",
-								"net"
+								"{{url}}"
 							],
 							"path": [
 								"api",
@@ -80,12 +78,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://saasmaapitest.azurewebsites.net/api/city/GetGeoByName?name=Port Dickson",
+							"raw": "http://{{url}}/api/city/GetGeoByName?name=Port Dickson",
 							"protocol": "http",
 							"host": [
-								"saasmaapitest",
-								"azurewebsites",
-								"net"
+								"{{url}}"
 							],
 							"path": [
 								"api",
@@ -128,12 +124,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://saasmaapitest.azurewebsites.net/api/city/GetGeoByCountry?country=my",
+							"raw": "http://{{url}}/api/city/GetGeoByCountry?country=my",
 							"protocol": "http",
 							"host": [
-								"saasmaapitest",
-								"azurewebsites",
-								"net"
+								"{{url}}"
 							],
 							"path": [
 								"api",
@@ -176,12 +170,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://saasmaapitest.azurewebsites.net/api/city/GetGeoByID?id=1734815",
+							"raw": "http://{{url}}/api/city/GetGeoByID?id=1734815",
 							"protocol": "http",
 							"host": [
-								"saasmaapitest",
-								"azurewebsites",
-								"net"
+								"{{url}}"
 							],
 							"path": [
 								"api",
@@ -224,12 +216,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://saasmaapitest.azurewebsites.net/api/city",
+							"raw": "http://{{url}}/api/city",
 							"protocol": "http",
 							"host": [
-								"saasmaapitest",
-								"azurewebsites",
-								"net"
+								"{{url}}"
 							],
 							"path": [
 								"api",
@@ -285,12 +275,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://saasmaapitest.azurewebsites.net/api/DigitalMarketing/GetDigitalMarketing?weatherID=211",
+							"raw": "http://{{url}}/api/DigitalMarketing/GetDigitalMarketing?weatherID=211",
 							"protocol": "http",
 							"host": [
-								"saasmaapitest",
-								"azurewebsites",
-								"net"
+								"{{url}}"
 							],
 							"path": [
 								"api",
@@ -413,12 +401,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://saasmaapitest.azurewebsites.net/api/DigitalMarketing/GetDigitalMarketing?weatherID={{weatherId}}",
+							"raw": "https://{{url}}/api/DigitalMarketing/GetDigitalMarketing?weatherID={{weatherId}}",
 							"protocol": "https",
 							"host": [
-								"saasmaapitest",
-								"azurewebsites",
-								"net"
+								"{{url}}"
 							],
 							"path": [
 								"api",
