@@ -1,0 +1,443 @@
+{
+	"info": {
+		"_postman_id": "eb6c2eb8-7ae2-4073-b3d0-cfed8135a6b7",
+		"name": "SaasPOC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "City/Country List",
+			"item": [
+				{
+					"name": "GetAllCountry",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "676187bb-2527-4b72-833b-058b8264fc77",
+								"exec": [
+									"pm.test(\"Test Status code\", function(){",
+									"    pm.response.to.have.status(200);",
+									"})",
+									"\t",
+									"pm.test(\"Response must be valid and have a body\", function(){",
+									"    pm.response.to.be.ok;",
+									"    pm.response.to.be.withBody;",
+									"    pm.response.to.be.json;",
+									"})",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://saasmaapitest.azurewebsites.net/api/city/GetAllCountry",
+							"protocol": "http",
+							"host": [
+								"saasmaapitest",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"city",
+								"GetAllCountry"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetGeoByName",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "96821881-fbd8-40f2-82e1-b6e148602b28",
+								"exec": [
+									"pm.test(\"Test Status code\", function(){",
+									"    pm.response.to.have.status(200);",
+									"})",
+									"\t",
+									"pm.test(\"Response must be valid and have a body\", function(){",
+									"    pm.response.to.be.ok;",
+									"    pm.response.to.be.withBody;",
+									"    pm.response.to.be.json;",
+									"})",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://saasmaapitest.azurewebsites.net/api/city/GetGeoByName?name=Port Dickson",
+							"protocol": "http",
+							"host": [
+								"saasmaapitest",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"city",
+								"GetGeoByName"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Port Dickson"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetGeoByCountry",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "34d179bc-0f4a-4e97-bccc-9d8d6f3d5424",
+								"exec": [
+									"pm.test(\"Test Status code\", function(){",
+									"    pm.response.to.have.status(200);",
+									"})",
+									"\t",
+									"pm.test(\"Response must be valid and have a body\", function(){",
+									"    pm.response.to.be.ok;",
+									"    pm.response.to.be.withBody;",
+									"    pm.response.to.be.json;",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://saasmaapitest.azurewebsites.net/api/city/GetGeoByCountry?country=my",
+							"protocol": "http",
+							"host": [
+								"saasmaapitest",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"city",
+								"GetGeoByCountry"
+							],
+							"query": [
+								{
+									"key": "country",
+									"value": "my"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetGeoByID",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "6437b5c6-f8d7-4494-95b5-c9e569819159",
+								"exec": [
+									"pm.test(\"Test Status code\", function(){",
+									"    pm.response.to.have.status(200);",
+									"})",
+									"\t",
+									"pm.test(\"Response must be valid and have a body\", function(){",
+									"    pm.response.to.be.ok;",
+									"    pm.response.to.be.withBody;",
+									"    pm.response.to.be.json;",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://saasmaapitest.azurewebsites.net/api/city/GetGeoByID?id=1734815",
+							"protocol": "http",
+							"host": [
+								"saasmaapitest",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"city",
+								"GetGeoByID"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1734815"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllCity",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "6b915a98-d02e-452e-8067-c820cafe3037",
+								"exec": [
+									"pm.test(\"Test Status code\", function(){",
+									"    pm.response.to.have.status(200);",
+									"})",
+									"\t",
+									"pm.test(\"Response must be valid and have a body\", function(){",
+									"    pm.response.to.be.ok;",
+									"    pm.response.to.be.withBody;",
+									"    pm.response.to.be.json;",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://saasmaapitest.azurewebsites.net/api/city",
+							"protocol": "http",
+							"host": [
+								"saasmaapitest",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"city"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Digital Marketing",
+			"item": [
+				{
+					"name": "GetDigitalMarketing",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "b806c2bd-c672-44ad-99cf-694d294266bd",
+								"exec": [
+									"pm.test(\"Test Status code\", function(){",
+									"    pm.response.to.have.status(200);",
+									"})",
+									"\t",
+									"pm.test(\"Response must be valid and have a body\", function(){",
+									"    pm.response.to.be.ok;",
+									"    pm.response.to.be.withBody;",
+									"    pm.response.to.be.json;",
+									"})",
+									"",
+									"pm.test(\"Response show correct image 1\", function(){",
+									"    pm.expect(pm.response.text()).to.include('{\\\\\"image\\\\\":\\\\\"https://my-test-11.slatic.net/p/70c0c99f91798329bb8c80e005fe12c4.jpg\\\\\"}');",
+									"})",
+									"",
+									"pm.test(\"Response show correct image 2\", function(){",
+									"    pm.expect(pm.response.text()).to.include('{\\\\\"image\\\\\":\\\\\"https://my-test-11.slatic.net/p/d9b0608848b7c76cb41fc7d8179ace74.jpg\\\\\"}');",
+									"})",
+									"",
+									"pm.test(\"Response show correct image 3\", function(){",
+									"    pm.expect(pm.response.text()).to.include('{\\\\\"image\\\\\":\\\\\"https://my-test-11.slatic.net/p/c059538c54ae8c84609af3e14c8c676f.jpg\\\\\"}');",
+									"})",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://saasmaapitest.azurewebsites.net/api/DigitalMarketing/GetDigitalMarketing?weatherID=211",
+							"protocol": "http",
+							"host": [
+								"saasmaapitest",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"DigitalMarketing",
+								"GetDigitalMarketing"
+							],
+							"query": [
+								{
+									"key": "weatherID",
+									"value": "211"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Weather",
+			"item": [
+				{
+					"name": "PostToExternalAPI",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "13e23fc1-70d1-4b1a-9263-29e819a9b9b4",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);\r",
+									"postman.setEnvironmentVariable(\"weatherId\", jsonData.list[0].weather[0].id);\r",
+									"\r",
+									"pm.test(\"Test Status code\", function(){\r",
+									"    pm.response.to.have.status(200);\r",
+									"})\r",
+									"\t\r",
+									"pm.test(\"Response must be valid and have a body\", function(){\r",
+									"    pm.response.to.be.ok;\r",
+									"    pm.response.to.be.withBody;\r",
+									"    pm.response.to.be.json;\r",
+									"})\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://api.openweathermap.org/data/2.5/forecast?q=Copenhagen&APPID=e8a7550e9233c6cc8b006beff076a3b4&units=metric",
+							"protocol": "https",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"forecast"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Copenhagen"
+								},
+								{
+									"key": "APPID",
+									"value": "e8a7550e9233c6cc8b006beff076a3b4"
+								},
+								{
+									"key": "units",
+									"value": "metric"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetfromWeatherService",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "a0c5c044-d850-4415-b0ee-9ddd266cfc7c",
+								"exec": [
+									"pm.test(\"Test Status code\", function(){",
+									"    pm.response.to.have.status(200);",
+									"})",
+									"\t",
+									"pm.test(\"Response must be valid and have a body\", function(){",
+									"    pm.response.to.be.ok;",
+									"    pm.response.to.be.withBody;",
+									"    pm.response.to.be.json;",
+									"})",
+									"",
+									"pm.test(\"Response show correct image 1\", function(){",
+									"    pm.expect(pm.response.text()).to.include('{\\\\\"image\\\\\":\\\\\"https://my-test-11.slatic.net/p/7126025c8279998351a6e36c4361d35d.jpg\\\\\"}');",
+									"})",
+									"",
+									"pm.test(\"Response show correct image 2\", function(){",
+									"    pm.expect(pm.response.text()).to.include('{\\\\\"image\\\\\":\\\\\"https://my-test-11.slatic.net/p/733436de5f9f0f623f97962f811d96c3.jpg\\\\\"}');",
+									"})",
+									"",
+									"pm.test(\"Response show correct image 3\", function(){",
+									"    pm.expect(pm.response.text()).to.include('{\\\\\"image\\\\\":\\\\\"https://my-test-11.slatic.net/p/9fbd82b96563304025b77801cffe9f2b.jpg\\\\\"}');",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://saasmaapitest.azurewebsites.net/api/DigitalMarketing/GetDigitalMarketing?weatherID={{weatherId}}",
+							"protocol": "https",
+							"host": [
+								"saasmaapitest",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"DigitalMarketing",
+								"GetDigitalMarketing"
+							],
+							"query": [
+								{
+									"key": "weatherID",
+									"value": "{{weatherId}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
