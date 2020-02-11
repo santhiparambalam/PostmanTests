@@ -381,17 +381,17 @@
 									"    pm.response.to.be.json;",
 									"})",
 									"",
-									"pm.test(\"Response show correct image 1\", function(){",
-									"    pm.expect(pm.response.text()).to.include('{\\\\\"image\\\\\":\\\\\"https://my-test-11.slatic.net/p/7126025c8279998351a6e36c4361d35d.jpg\\\\\"}');",
-									"})",
+									"//pm.test(\"Response show correct image 1\", function(){",
+									"//    pm.expect(pm.response.text()).to.include('{\\\\\"image\\\\\":\\\\\"https://my-test-11.slatic.net/p/7126025c8279998351a6e36c4361d35d.jpg\\\\\"}');",
+									"//})",
 									"",
-									"pm.test(\"Response show correct image 2\", function(){",
-									"    pm.expect(pm.response.text()).to.include('{\\\\\"image\\\\\":\\\\\"https://my-test-11.slatic.net/p/733436de5f9f0f623f97962f811d96c3.jpg\\\\\"}');",
-									"})",
+									"//pm.test(\"Response show correct image 2\", function(){",
+									"//    pm.expect(pm.response.text()).to.include('{\\\\\"image\\\\\":\\\\\"https://my-test-11.slatic.net/p/733436de5f9f0f623f97962f811d96c3.jpg\\\\\"}');",
+									"//})",
 									"",
-									"pm.test(\"Response show correct image 3\", function(){",
-									"    pm.expect(pm.response.text()).to.include('{\\\\\"image\\\\\":\\\\\"https://my-test-11.slatic.net/p/9fbd82b96563304025b77801cffe9f2b.jpg\\\\\"}');",
-									"})"
+									"//pm.test(\"Response show correct image 3\", function(){",
+									"//    pm.expect(pm.response.text()).to.include('{\\\\\"image\\\\\":\\\\\"https://my-test-11.slatic.net/p/9fbd82b96563304025b77801cffe9f2b.jpg\\\\\"}');",
+									"//})"
 								],
 								"type": "text/javascript"
 							}
